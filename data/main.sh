@@ -1,4 +1,7 @@
 #! /bin/bash
+
+file="/home/CEO"
+
 sudo useradd -m -d /home/CEO CEO
 git clone https://github.com/kavin033/DeltaTask1_SysAd.git
 cp -r /var/omega/DeltaTask1_SysAd /home/CEO/.
@@ -21,4 +24,4 @@ chown CEO:CEO /home/CEO/*.sh
 sed -i "s/short_open_tag = Off/short_open_tag = On/" /etc/php/8.1/apache2/php.ini
 cp /home/CEO/src/*usr.txt /var/www/html/
 chmod 777 /var/www/html/*usr.txt
-/usr/sbin/apache2ctl -D FOREGROUND
+ /usr/sbin/apache2ctl -D FOREGROUND
