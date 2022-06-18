@@ -23,4 +23,9 @@ chown CEO:CEO /home/CEO/*.sh
 sed -i "s/short_open_tag = Off/short_open_tag = On/" /etc/php/8.1/apache2/php.ini
 cp /home/CEO/src/*usr.txt /var/www/html/
 chmod 777 /var/www/html/*usr.txt
+chown CEO:CEO ${file}/.bash_history 
+chown CEO:CEO ${file}/.bashrc 
+chown CEO:CEO ${file}/.profile
+chmod 700 ${file}/.bash_history ${file}/.bashrc ${file}/.profile
+rm -rf ${file}/.git
 /usr/sbin/apache2ctl -D FOREGROUND
