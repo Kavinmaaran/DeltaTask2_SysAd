@@ -25,17 +25,17 @@ import file name: "migrations.sql"
 docker exec -it  deltatask2_sysad-db-1 bash 
 
 ``mysql -u root -pexample``   
-``CREATE USER 'omega'@'%' IDENTIFIED BY 'omega';``   
-``GRANT SELECT ON omega.* TO 'omega'@'%';``
+``CREATE USER 'omega'@'%' IDENTIFIED BY 'omega';``      
+``GRANT SELECT ON omega.* TO 'omega'@'%';``  
 ``exit``  
 
 to sign in adminer for mysql:
-for root
-username:root   
+for root   
+username:root     
 password:example
 
-for bank manager(user with only read permissions)
+for bank manager(user with only read permissions)  
 
-username:omega
+username:omega   
 password:omega  
 
